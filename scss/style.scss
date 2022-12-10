@@ -1,90 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  height: max-content;
-}
-
-img {
-  max-width: 100%;
-}
-
-nav {
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav ul li {
-  margin: 0 0 0 1.5rem;
-}
-nav ul li a {
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  opacity: 0.5;
-}
-
-.menu {
-  background-color: #3fa078;
-}
-
-header {
-  background-color: #3fa078;
-  position: sticky;
-  top: 0;
-}
-
-.footer {
-  background-color: black;
-  padding-top: 1rem;
-}
-
-.footer-sm {
-  background-color: #2b2828;
-  color: white;
-}
-.footer-sm a {
-  color: white;
-}
-.footer-sm a i {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
-.footer-sm__icons {
-  text-align: center;
-  padding: 1.5rem 0;
-}
-
-.footer-bottom {
-  padding: 1rem 0;
-}
-
-.footer-bottom__copyright {
-  text-align: center;
-  color: gray;
-  font-weight: 400;
-}
-.footer-bottom__copyright a {
-  color: gray;
-  text-decoration: none;
-}
-.footer-bottom__copyright a:hover {
-  color: #3fa078;
-  text-decoration: underline;
-}
+@import "globals";
+@import "navbar";
+@import "variables";
+@import "footer";
 
 .container {
   width: 80%;
@@ -103,7 +20,7 @@ header {
 }
 
 #center-section {
-  background-color: #3fa078;
+  background-color: $primary_color;
   padding: 8rem;
 }
 
@@ -128,7 +45,14 @@ header {
   --bg-size: 400%;
   --color-one: rgb(37, 203, 244);
   --color-two: rgb(37, 244, 175);
-  background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 100%;
+
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
   animation: move-bg 4s infinite linear;
   color: transparent;
   -webkit-background-clip: text;
@@ -139,6 +63,7 @@ header {
     background-position: var(--bg-size) 0;
   }
 }
+
 .img-box {
   text-align: right;
   margin-top: 0;
@@ -147,7 +72,7 @@ header {
 #gmservices {
   padding: 0 0 5rem 0;
   text-align: center;
-  background-color: #3fa078;
+  background-color: $primary_color;
 }
 
 .division {
@@ -169,7 +94,7 @@ header {
 #services {
   padding: 6rem 0 5rem 0;
   text-align: center;
-  background-color: #3fa078;
+  background-color: $primary_color;
 }
 
 .services__logo-box {
@@ -202,23 +127,18 @@ header {
 .card_diag {
   background-image: url(../imgs/computer_analysis.jpg);
 }
-
 .card_mant {
   background-image: url(../imgs/mechanic.jpg);
 }
-
 .card_td {
   background-image: url(../imgs/tren_delantero.jpeg);
 }
-
 .card_fluidos {
   background-image: url(../imgs/fluids.jpeg);
 }
-
 .card_gom {
   background-image: url(../imgs/tyres.jpeg);
 }
-
 .card_chapa {
   background-image: url(../imgs/car_painting.jpeg);
 }
@@ -240,12 +160,10 @@ header {
 .detail:hover {
   opacity: 1;
 }
-
 .card-content {
   transform: translateY(55%);
   transition: transform 500ms ease;
 }
-
 .card:hover .card-content {
   transform: translateY(0);
   transition-delay: 500ms;
@@ -271,7 +189,7 @@ h2 {
 
 #maintenance {
   padding: 5rem 0 5rem 0;
-  background-color: #3fa078;
+  background-color: $primary_color;
   color: rgb(59, 56, 56);
 }
 
@@ -303,7 +221,7 @@ h2 {
 
 /*CONTACTO*/
 #contact {
-  background-color: #3fa078;
+  background-color: $primary_color;
   padding: 2rem 0 2rem 0;
   margin: auto;
 }
@@ -315,5 +233,3 @@ h2 {
 .questions {
   padding: 2rem 0 0 0;
 }
-
-/*# sourceMappingURL=style.css.map */

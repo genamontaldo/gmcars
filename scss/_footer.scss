@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  padding-top: 1rem;
+}
+
+.footer-sm {
+  background-color: #2b2828;
+  color: white;
+  a {
+    color: white;
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.footer-sm__icons {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.footer-bottom {
+  padding: 1rem 0;
+}
+
+.footer-bottom__copyright {
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+  a {
+    color: gray;
+    text-decoration: none;
+    &:hover {
+      color: $primary_color;
+      text-decoration: underline;
+    }
+  }
+}
